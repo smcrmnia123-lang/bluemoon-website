@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | BlueMoon Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#about">About</a>
+      </div>
+      <a href="contact.html" class="btn btn-accent">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="tag">Shop Online</div>
+        <h2>Bring BlueMoon Home</h2>
+        <p>Coffee beans, merchandise, and pre-order MoonBowls for pickup or delivery.</p>
+      </div>
+
+      <div class="shop-tabs">
+        <button class="shop-tab active" data-filter="all">All</button>
+        <button class="shop-tab" data-filter="beans">Coffee Beans</button>
+        <button class="shop-tab" data-filter="bowls">MoonBowls</button>
+        <button class="shop-tab" data-filter="merch">Merchandise</button>
+      </div>
+
+      <div class="prod-grid" id="shop-grid">
+
+        <div class="prod-card" data-cat="beans">
+          <div class="ph">BlueMoon House Blend beans photo</div>
+          <div class="body">
+            <h3>House Blend Beans (250g)</h3>
+            <p>Our signature roast, ground or whole bean.</p>
+            <div class="price">₱320</div>
+            <button class="btn btn-accent add-to-cart" data-name="House Blend Beans (250g)" data-price="320">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="prod-card" data-cat="beans">
+          <div class="ph">Dark Roast beans photo</div>
+          <div class="body">
+            <h3>Dark Roast Beans (250g)</h3>
+            <p>Bold and smoky, for strong coffee lovers.</p>
+            <div class="price">₱340</div>
+            <button class="btn btn-accent add-to-cart" data-name="Dark Roast Beans (250g)" data-price="340">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="prod-card" data-cat="bowls">
+          <div class="ph">Chicken MoonBowl (pre-order) photo</div>
+          <div class="body">
+            <h3>Signature Chicken MoonBowl</h3>
+            <p>Pre-order for pickup or delivery.</p>
+            <div class="price">₱180</div>
+            <button class="btn btn-accent add-to-cart" data-name="Signature Chicken MoonBowl" data-price="180">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="prod-card" data-cat="bowls">
+          <div class="ph">BBQ MoonBowl (pre-order) photo</div>
+          <div class="body">
+            <h3>BBQ MoonBowl</h3>
+            <p>Pre-order for pickup or delivery.</p>
+            <div class="price">₱170</div>
+            <button class="btn btn-accent add-to-cart" data-name="BBQ MoonBowl" data-price="170">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="prod-card" data-cat="merch">
+          <div class="ph">BlueMoon ceramic mug photo</div>
+          <div class="body">
+            <h3>BlueMoon Ceramic Mug</h3>
+            <p>Matte navy finish with gold logo print.</p>
+            <div class="price">₱250</div>
+            <button class="btn btn-accent add-to-cart" data-name="BlueMoon Ceramic Mug" data-price="250">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="prod-card" data-cat="merch">
+          <div class="ph">BlueMoon tote bag photo</div>
+          <div class="body">
+            <h3>BlueMoon Tote Bag</h3>
+            <p>Canvas tote, moon-phase print.</p>
+            <div class="price">₱199</div>
+            <button class="btn btn-accent add-to-cart" data-name="BlueMoon Tote Bag" data-price="199">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY CART BAR -->
+  <div class="cart-bar">
+    <div class="wrap">
+      <div class="cart-count">Cart: <span id="cart-count">0</span> item(s) — Total: ₱<span id="cart-total">0</span></div>
+      <a href="cart.html" class="btn btn-accent">View Cart</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div>info.bluemoonph@gmail.com</div>
+      <div>Instagram · Facebook</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

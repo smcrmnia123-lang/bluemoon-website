@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | BlueMoon Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#about">About</a>
+      </div>
+      <a href="shop.html" class="btn btn-accent">Continue Shopping</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="tag">Your Order</div>
+        <h2>Cart</h2>
+      </div>
+
+      <div id="cart-items" class="menu-list" style="grid-template-columns:1fr;max-width:700px;margin:0 auto;">
+        <!-- filled in by script.js -->
+      </div>
+
+      <div class="form-card" style="margin-top:32px;">
+        <div class="form-row" style="display:flex;justify-content:space-between;font-size:18px;font-weight:700;color:var(--midnight);">
+          <span>Total</span>
+          <span>₱<span id="grand-total">0</span></span>
+        </div>
+        <a href="contact.html" class="btn btn-accent" style="width:100%;text-align:center;display:block;margin-top:12px;">Proceed to Checkout</a>
+        <p style="text-align:center;font-size:12px;color:var(--text-2);margin-top:12px;">Checkout is handled via our order form — a team member will confirm your order and payment method.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div>info.bluemoonph@gmail.com</div>
+      <div>Instagram · Facebook</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

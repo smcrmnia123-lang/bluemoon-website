@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Order | BlueMoon Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#about">About</a>
+      </div>
+      <a href="contact.html" class="btn btn-accent">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="tag">Reserve or Order</div>
+        <h2>Get in Touch</h2>
+        <p>Reserve a table, place a pickup/delivery order, or ask us anything.</p>
+      </div>
+
+      <form class="form-card" id="contact-form">
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-row">
+          <label for="branch">Preferred Branch</label>
+          <select id="branch">
+            <option>Alangilan (Main)</option>
+            <option>Lipa Town Center</option>
+            <option>Bulacnin</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="type">Request Type</label>
+          <select id="type">
+            <option>Table Reservation</option>
+            <option>Pickup Order</option>
+            <option>Delivery Order</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message / Order Details</label>
+          <textarea id="message" rows="4" placeholder="Let us know your order, party size, or preferred time"></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent" style="width:100%;">Submit</button>
+      </form>
+      <p id="form-status" style="text-align:center;margin-top:16px;font-size:14px;color:var(--midnight);"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div class="brand">BlueMoon <em>PH</em></div>
+      <div>info.bluemoonph@gmail.com</div>
+      <div>Instagram · Facebook</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -64,7 +64,8 @@ nav .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:
 .prod-grid{display:grid;gap:24px;grid-template-columns:1fr;}
 @media(min-width:640px){.prod-grid{grid-template-columns:1fr 1fr;}}
 @media(min-width:960px){.prod-grid{grid-template-columns:repeat(4,1fr);}}
-.prod-card {border-radius:12px;background:none;overflow:hidden;box-shadow:0 1px 3px rgba(245, 1, 1, 0.08);}
+.prod-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);}
+.prod-card img.ph{padding:0;border:none;background:none;aspect-ratio:4/3;object-fit:cover;min-height:0;}
 .prod-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.12);transform:translateY(-2px);transition:all .2s ease;}
 .prod-card .ph{padding:0;object-fit:cover;aspect-ratio:4/3;}
 .prod-card .body{padding:18px;}

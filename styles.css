@@ -77,6 +77,7 @@ nav .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:
 .about-grid{display:grid;gap:36px;grid-template-columns:1fr;align-items:center;}
 @media(min-width:800px){.about-grid{grid-template-columns:1fr 1fr;}}
 .about-ph{aspect-ratio:4/3;padding:0;border:none;background:none;object-fit:cover;min-height:0;}
+.about- img.ph{padding:0;border:none;background:none;object-fit:cover;aspect-ratio:4/3;min-height:0;}
 .about-text p{color:var(--text-2);margin-top:14px;font-size:15px;}
 .check-list{margin-top:20px;display:flex;flex-direction:column;gap:10px;}
 .check-item{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;}

@@ -39,7 +39,7 @@ function updateCartBar() {
 }
 
 // ===== ADD TO CART BUTTONS (on shop.html) =====
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { 
   const addButtons = document.querySelectorAll('.add-to-cart');
   addButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -78,12 +78,29 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      document.getElementById('form-status').textContent =
-        'Thank you! We received your request and will contact you shortly.';
-      form.reset();
+      const data = {
+        full_name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        branch: document.getElementById('branch').value,
+        request_type: document.getElementById('type').value,
+        message: document.getElementById('message').value
+      };
+
+      fetch('http://localhost:3001/api/bluemoon/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function (response) { return response.json(); })
+      .then(function (result) {
+        document.getElementById('form-status').textContent = result.message;
+        form.reset();
+      })
+      .catch(function (error) {
+        document.getElementById('form-status').textContent = 'Something went wrong.';
+      });
     });
   }
-});
 
 function renderCartPage() {
   const container = document.getElementById('cart-items');
@@ -110,3 +127,4 @@ function renderCartPage() {
   const grandTotalEl = document.getElementById('grand-total');
   if (grandTotalEl) grandTotalEl.textContent = cartTotal(cart);
 }
+});
